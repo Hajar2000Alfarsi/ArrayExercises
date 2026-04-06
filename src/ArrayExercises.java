@@ -140,9 +140,15 @@ public class ArrayExercises {
         System.out.println(Arrays.toString(swapEnds(swapEndsArray)));*/
 
         //Task 25: frontPiece
-        System.out.println("Task 25: frontPiece");
+        /*System.out.println("Task 25: frontPiece");
         int[] frontPieceArray = {3,2,5,5,8};
-        System.out.println(Arrays.toString(frontPiece(frontPieceArray)));
+        System.out.println(Arrays.toString(frontPiece(frontPieceArray)));*/
+
+        //Task 26: front11
+        System.out.println("Task 26: front11");
+        int[] front11Array1 = {1};
+        int[] front11Array2 = {7,8,9};
+        System.out.println(Arrays.toString(front11(front11Array1,front11Array2)));
     }
 
 
@@ -388,4 +394,17 @@ public class ArrayExercises {
         return result;
     }
 
+    //Task 26: front11
+    public static int[] front11(int[] arr1,int[] arr2){
+        int[] result=new int[2];
+        if(arr1.length==0){
+            result[0]=arr2[0];
+        }else if(arr2.length==0) {
+            result[0] = arr1[0];
+        }else{
+            result[0]=arr1[0];
+            result[1]=arr2[0];
+        }
+        return result;
+    }
 }
