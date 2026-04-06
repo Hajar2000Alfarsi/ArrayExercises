@@ -124,9 +124,15 @@ public class ArrayExercises {
         System.out.println(has23(has23Array));*/
 
         //Task 22: double23
-        System.out.println("Task 22: double23");
+        /*System.out.println("Task 22: double23");
         int[] double23Array = {3,2};
-        System.out.println(double23(double23Array));
+        System.out.println(double23(double23Array));*/
+
+        //Task 23: biggerTwo
+        System.out.println("Task 23: biggerTwo");
+        int[] biggerTwoArray1 = {1,2};
+        int[] biggerTwoArray2 = {1,9};
+        System.out.println(Arrays.toString(biggerTwo(biggerTwoArray1,biggerTwoArray2)));
         }
 
 
@@ -336,5 +342,16 @@ public class ArrayExercises {
             }
         }
         return twice;
+    }
+
+    //Task 23: biggerTwo
+    public static int[] biggerTwo(int[] arr1,int[] arr2){
+        int sum1=arr1[0]+arr1[1];
+        int sum2=arr2[0]+arr2[1];
+        if(sum1>=sum2){
+            return arr1;
+        }else {
+            return arr2;
+        }
     }
 }
