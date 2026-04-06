@@ -53,13 +53,18 @@ public class ArrayExercises {
         System.out.println(Arrays.toString(midThree(midThreeArray)));*/
 
         //Task 9: unlucky1
-        System.out.println("Task 9: unlucky1");
+        /*System.out.println("Task 9: unlucky1");
         int[] unlucky1Array = {2,1,3,6,3};
         System.out.println(unlucky1(unlucky1Array));
         int[] unlucky1Array1 = {2,1,7,6,3};
-        System.out.println(unlucky1(unlucky1Array1));
+        System.out.println(unlucky1(unlucky1Array1));*/
 
-
+        //Task 10: sameFirstLast
+        System.out.println("Task 10: sameFirstLast");
+        int[] sameFirstLastArray = {2,1,3,6,2};
+        System.out.println(sameFirstLast(sameFirstLastArray));
+        int[] sameFirstLastArray1 = {2,7,4,5,6};
+        System.out.println(sameFirstLast(sameFirstLastArray1));
 
     }
 
@@ -139,4 +144,14 @@ public class ArrayExercises {
             return false;
         }
     }
+
+    //Task 10: sameFirstLast
+    public static boolean sameFirstLast(int[] arr){
+        if(arr.length>=1 && arr[0]==arr[arr.length-1]){
+            return true;
+        }else {
+            return false;
+        }
+    }
+
 }
