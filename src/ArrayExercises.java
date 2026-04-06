@@ -67,11 +67,18 @@ public class ArrayExercises {
         System.out.println(sameFirstLast(sameFirstLastArray1));*/
 
         //Task 11: maxEnd3
-        System.out.println("Task 11: maxEnd3");
+        /*System.out.println("Task 11: maxEnd3");
         int[] maxEnd3Array = {11,2,3};
-        System.out.println(Arrays.toString(maxEnd3(maxEnd3Array)));
-    }
+        System.out.println(Arrays.toString(maxEnd3(maxEnd3Array)));*/
 
+        //Task 12: makeEnds
+        System.out.println("Task 12: makeEnds");
+        int[] makeEndsArray = {11,2,3};
+        System.out.println(Arrays.toString(makeEnds(makeEndsArray)));
+
+
+
+         }
 
 
     //Task 1: firstLast6
@@ -172,4 +179,13 @@ public class ArrayExercises {
             }
         return result;
     }
+
+    //Task 12: makeEnds
+    public static int[] makeEnds(int[] arr){
+        int[] result={arr[0],arr[arr.length-1]};
+        return result;
+    }
+
+
+
 }
