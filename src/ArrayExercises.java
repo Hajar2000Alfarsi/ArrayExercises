@@ -23,11 +23,22 @@ public class ArrayExercises {
         reverse3(reverseArray);*/
 
         //Task 4: middleWay
-        System.out.println("Task 4: middleWay ");
+       /* System.out.println("Task 4: middleWay ");
         int[] midlleWay1 = {1,2,3};
         int[] midlleWay2 = {4,5,6};
         System.out.println(Arrays.toString(middleWay(midlleWay1,midlleWay2)));
+
+        */
+
+        //Task 5: no23
+        System.out.println("Task 5: no23 ");
+        int[] array1 = {1,2};
+        System.out.println(no23(array1));
+        int[] array2 = {4,5};
+        System.out.println(no23(array2));
+
     }
+
 
     //Task 1: firstLast6
     public static boolean firstLast6(int nums[]){
@@ -58,5 +69,15 @@ public class ArrayExercises {
     public static int[] middleWay(int[] ar1,int[] ar2){
         int [] result={ar1[1],ar2[1]};
         return result;
+    }
+
+    //Task 5: no23
+    public static boolean no23(int[] arr){
+        if(arr[0]!=2 && arr[0]!=3 && arr[1]!=2 && arr[1]!=3){
+            return true;
+        }else {
+            return false;
+        }
+
     }
 }
