@@ -60,12 +60,16 @@ public class ArrayExercises {
         System.out.println(unlucky1(unlucky1Array1));*/
 
         //Task 10: sameFirstLast
-        System.out.println("Task 10: sameFirstLast");
+        /*System.out.println("Task 10: sameFirstLast");
         int[] sameFirstLastArray = {2,1,3,6,2};
         System.out.println(sameFirstLast(sameFirstLastArray));
         int[] sameFirstLastArray1 = {2,7,4,5,6};
-        System.out.println(sameFirstLast(sameFirstLastArray1));
+        System.out.println(sameFirstLast(sameFirstLastArray1));*/
 
+        //Task 11: maxEnd3
+        System.out.println("Task 11: maxEnd3");
+        int[] maxEnd3Array = {11,2,3};
+        System.out.println(Arrays.toString(maxEnd3(maxEnd3Array)));
     }
 
 
@@ -154,4 +158,18 @@ public class ArrayExercises {
         }
     }
 
+    //Task 11: maxEnd3
+    public static int[] maxEnd3(int[] arr){
+        int[] result=new int[3];
+        if(arr[0]>arr[2]){
+            for(int i=0;i<3;i++){
+                result[i]=arr[0];
+            }
+            }else if(arr[0]<arr[2]) {
+            for(int i=0;i<3;i++){
+                result[i]=arr[2];
+            }
+            }
+        return result;
+    }
 }
