@@ -119,9 +119,14 @@ public class ArrayExercises {
         System.out.println(sum2(sum2Array));*/
 
         //Task 21: has23
-        System.out.println("Task 21: has23");
+        /*System.out.println("Task 21: has23");
         int[] has23Array = {3,3};
-        System.out.println(has23(has23Array));
+        System.out.println(has23(has23Array));*/
+
+        //Task 22: double23
+        System.out.println("Task 22: double23");
+        int[] double23Array = {3,2};
+        System.out.println(double23(double23Array));
         }
 
 
@@ -318,5 +323,18 @@ public class ArrayExercises {
             }
         }
         return has2or3;
+    }
+
+    //Task 22: double23
+    public static boolean double23(int[] arr){
+        boolean twice=false;
+        for(int i=0;i<arr.length-1;i++){
+            if(arr[i]==2 && arr[i+1]==2 || arr[i]==3 && arr[i+1]==3){
+                twice=true;
+            }else{
+                twice=false;
+            }
+        }
+        return twice;
     }
 }
