@@ -38,9 +38,16 @@ public class ArrayExercises {
         System.out.println(no23(array2));*/
 
         //Task 6: fix23
-        System.out.println("Task 6: fix23");
+        /*System.out.println("Task 6: fix23");
         int[] fix23Array = {2,3,5};
-        System.out.println(Arrays.toString(fix23(fix23Array)));
+        System.out.println(Arrays.toString(fix23(fix23Array)));*/
+
+        //Task 7: makeMiddle
+        System.out.println("Task 7: makeMiddle");
+        int[] makeMiddleArray = {2,3,5,8};
+        System.out.println(Arrays.toString(makeMiddle(makeMiddleArray)));
+
+
     }
 
 
@@ -94,4 +101,13 @@ public class ArrayExercises {
         }
         return arr;
     }
+
+    //Task 7: makeMiddle
+    public static int[] makeMiddle(int[] arr){
+        int middlepoint=arr.length/2;
+        int [] result={arr[middlepoint-1],arr[middlepoint]};
+        return result;
+    }
+
+
 }
