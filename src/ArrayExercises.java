@@ -99,10 +99,14 @@ public class ArrayExercises {
         System.out.println(maxTriple(maxTripleArray1));*/
 
         //Task 17: make2
-        System.out.println("Task 17: make2");
+        /*System.out.println("Task 17: make2");
         int[] make2Array1 = {};
         int[] make2Array2 = {3,4,4};
-        System.out.println(Arrays.toString(make2(make2Array1,make2Array2)));
+        System.out.println(Arrays.toString(make2(make2Array1,make2Array2)));*/
+
+        //Task 18: makePi
+        System.out.println("Task 18: makePi");
+        System.out.println("PI=" + Arrays.toString(makePi()));
     }
 
 
@@ -262,5 +266,11 @@ public class ArrayExercises {
             result[1]=arr2[1];
         }
         return result;
+    }
+
+    //Task 18: makePi
+    public static int[] makePi(){
+        int[] pi={3,1,4};
+        return pi;
     }
 }
