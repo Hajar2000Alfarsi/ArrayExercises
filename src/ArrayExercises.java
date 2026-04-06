@@ -1,4 +1,6 @@
+import java.util.Arrays;
 public class ArrayExercises {
+
     public static void main(String[] args){
 
         //Task 1: firstLast6
@@ -10,10 +12,15 @@ public class ArrayExercises {
 */
 
         //Task 2: commonEnd
-        System.out.println("Task 2: commonEnd ");
+        /*System.out.println("Task 2: commonEnd ");
         int[] arr1= {1,2,6};
         int[] arr2= {1,2,6,5,8};
-        System.out.println(commonEnd(arr1,arr2));
+        System.out.println(commonEnd(arr1,arr2));*/
+
+        //Task 3: reverse3
+        System.out.println("Task 3: reverse3 ");
+        int[] reverseArray= {1,2,6};
+        reverse3(reverseArray);
     }
 
     //Task 1: firstLast6
@@ -33,5 +40,11 @@ public class ArrayExercises {
         }else {
             return false;
         }
+    }
+
+    //Task 2: reverse3
+    public static void reverse3(int nums[]){
+        int[] result ={nums[2],nums[1],nums[0]};
+        System.out.println(Arrays.toString(result));
     }
 }
