@@ -72,11 +72,14 @@ public class ArrayExercises {
         System.out.println(Arrays.toString(maxEnd3(maxEnd3Array)));*/
 
         //Task 12: makeEnds
-        System.out.println("Task 12: makeEnds");
+        /*System.out.println("Task 12: makeEnds");
         int[] makeEndsArray = {11,2,3};
-        System.out.println(Arrays.toString(makeEnds(makeEndsArray)));
+        System.out.println(Arrays.toString(makeEnds(makeEndsArray)));*/
 
-
+        //Task 13: makeLast
+        System.out.println("Task 12: makeEnds");
+        int[] makeLastArray = {11,2,3};
+        System.out.println(Arrays.toString(makeLast(makeLastArray)));
 
          }
 
@@ -186,6 +189,15 @@ public class ArrayExercises {
         return result;
     }
 
-
+    //Task 13: makeLast
+    public static int[] makeLast(int[] arr){
+        int doubleLength= arr.length*2;
+        int[] result=new int[doubleLength];
+        for(int i=1;i<result.length-2;i++){
+            result[i]=0;
+        }
+        result[result.length-1]=arr[arr.length-1];
+        return result;
+    }
 
 }
