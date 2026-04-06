@@ -94,11 +94,15 @@ public class ArrayExercises {
         System.out.println(Arrays.toString(plusTwo(plusTwoArray1,plusTwoArray2)));*/
 
         //Task 16: maxTriple
-        System.out.println("Task 16: maxTriple");
+        /*System.out.println("Task 16: maxTriple");
         int[] maxTripleArray1 = {1,2,5,9,4};
-        System.out.println(maxTriple(maxTripleArray1));
+        System.out.println(maxTriple(maxTripleArray1));*/
 
-
+        //Task 17: make2
+        System.out.println("Task 17: make2");
+        int[] make2Array1 = {};
+        int[] make2Array2 = {3,4,4};
+        System.out.println(Arrays.toString(make2(make2Array1,make2Array2)));
     }
 
 
@@ -242,5 +246,21 @@ public class ArrayExercises {
             int middle=arr[arr.length/2];
             int last=arr[arr.length-1];
             return Math.max(first,Math.max(middle,last));
+    }
+
+    //Task 17: make2
+    public static int[] make2(int[] arr1,int[] arr2){
+        int[] result=new int[2];
+        if(arr1.length==2){
+            result[0]=arr1[0];
+            result[1]=arr1[1];
+        }else if(arr1.length==1){
+            result[0]=arr1[0];
+            result[1]=arr2[0];
+        }else if(arr1.length==0){
+            result[0]=arr2[0];
+            result[1]=arr2[1];
+        }
+        return result;
     }
 }
