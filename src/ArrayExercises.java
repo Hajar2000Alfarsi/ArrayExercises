@@ -105,8 +105,13 @@ public class ArrayExercises {
         System.out.println(Arrays.toString(make2(make2Array1,make2Array2)));*/
 
         //Task 18: makePi
-        System.out.println("Task 18: makePi");
-        System.out.println("PI=" + Arrays.toString(makePi()));
+        /*System.out.println("Task 18: makePi");
+        System.out.println("PI=" + Arrays.toString(makePi()));*/
+
+        //Task 19: rotateLeft3
+        System.out.println("Task 19: rotateLeft3");
+        int[] rotateLeft3Array = {1,2,3};
+        System.out.println(Arrays.toString(rotateLeft3(rotateLeft3Array)));
     }
 
 
@@ -273,4 +278,11 @@ public class ArrayExercises {
         int[] pi={3,1,4};
         return pi;
     }
+
+    //Task 19: rotateLeft3
+    public static int[] rotateLeft3(int[] arr){
+        int[] result={arr[1],arr[2],arr[0]};
+        return result;
+    }
+
 }
