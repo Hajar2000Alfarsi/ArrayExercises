@@ -31,12 +31,16 @@ public class ArrayExercises {
         */
 
         //Task 5: no23
-        System.out.println("Task 5: no23 ");
+        /*System.out.println("Task 5: no23 ");
         int[] array1 = {1,2};
         System.out.println(no23(array1));
         int[] array2 = {4,5};
-        System.out.println(no23(array2));
+        System.out.println(no23(array2));*/
 
+        //Task 6: fix23
+        System.out.println("Task 6: fix23");
+        int[] fix23Array = {2,3,5};
+        System.out.println(Arrays.toString(fix23(fix23Array)));
     }
 
 
@@ -79,5 +83,15 @@ public class ArrayExercises {
             return false;
         }
 
+    }
+
+    //Task 6: fix23
+    public static int[] fix23(int[] arr){
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]==2 && arr[i+1]==3){
+                arr[i+1]=0;
+            }
+        }
+        return arr;
     }
 }
