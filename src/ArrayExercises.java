@@ -2,10 +2,18 @@ public class ArrayExercises {
     public static void main(String[] args){
 
         //Task 1: firstLast6
+        /*System.out.println("Task 1: firstLast6");
         int[] firstArray= {1,2,6};
         System.out.println(firstLast6(firstArray));
-        int[] scoandArray= {1,2,6,5,8};
-        System.out.println(firstLast6(scoandArray));
+        int[] scondArray= {1,2,6,5,8};
+        System.out.println(firstLast6(scondArray));
+*/
+
+        //Task 2: commonEnd
+        System.out.println("Task 2: commonEnd ");
+        int[] arr1= {1,2,6};
+        int[] arr2= {1,2,6,5,8};
+        System.out.println(commonEnd(arr1,arr2));
     }
 
     //Task 1: firstLast6
@@ -14,6 +22,15 @@ public class ArrayExercises {
             return true;
         }else
         {
+            return false;
+        }
+    }
+
+    //Task 2: commonEnd
+    public static boolean commonEnd(int num1[],int num2[]){
+        if((num1[0]==num2[0])||(num1[num1.length-1]==num2[num2.length-1])){
+            return true;
+        }else {
             return false;
         }
     }
