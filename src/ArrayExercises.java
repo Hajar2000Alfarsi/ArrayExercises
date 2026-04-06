@@ -109,10 +109,18 @@ public class ArrayExercises {
         System.out.println("PI=" + Arrays.toString(makePi()));*/
 
         //Task 19: rotateLeft3
-        System.out.println("Task 19: rotateLeft3");
+        /*System.out.println("Task 19: rotateLeft3");
         int[] rotateLeft3Array = {1,2,3};
-        System.out.println(Arrays.toString(rotateLeft3(rotateLeft3Array)));
-    }
+        System.out.println(Arrays.toString(rotateLeft3(rotateLeft3Array)));*/
+
+        //Task 20: sum2
+        System.out.println("Task 20: sum2");
+        int[] sum2Array = {1,9,3};
+        System.out.println(sum2(sum2Array));
+
+        }
+
+
 
 
     //Task 1: firstLast6
@@ -283,6 +291,15 @@ public class ArrayExercises {
     public static int[] rotateLeft3(int[] arr){
         int[] result={arr[1],arr[2],arr[0]};
         return result;
+    }
+
+    //sum2
+    public static int sum2(int[] arr){
+        int sum=0;
+        for(int i=0;i<2;i++){
+            sum += arr[i];
+        }
+        return sum;
     }
 
 }
