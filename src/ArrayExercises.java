@@ -48,11 +48,21 @@ public class ArrayExercises {
         System.out.println(Arrays.toString(makeMiddle(makeMiddleArray)));*/
 
         //Task 8: midThree
-        System.out.println("Task 8: midThree");
+        /*System.out.println("Task 8: midThree");
         int[] midThreeArray = {2,3,5,8,6};
-        System.out.println(Arrays.toString(midThree(midThreeArray)));
+        System.out.println(Arrays.toString(midThree(midThreeArray)));*/
+
+        //Task 9: unlucky1
+        System.out.println("Task 9: unlucky1");
+        int[] unlucky1Array = {2,1,3,6,3};
+        System.out.println(unlucky1(unlucky1Array));
+        int[] unlucky1Array1 = {2,1,7,6,3};
+        System.out.println(unlucky1(unlucky1Array1));
+
+
 
     }
+
 
 
     //Task 1: firstLast6
@@ -120,4 +130,13 @@ public class ArrayExercises {
         return result;
     }
 
+    //Task 9: unlucky1
+    public static boolean unlucky1(int[] arr){
+        if(arr[0]==1 && arr[1]==3 || arr[1]==1 && arr[2]==3){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }
