@@ -82,10 +82,19 @@ public class ArrayExercises {
         System.out.println(Arrays.toString(makeLast(makeLastArray)));*/
 
         //Task 14: start1
-        System.out.println("Task 14: start1");
+        /*System.out.println("Task 14: start1");
         int[] startArray1 = {1,2,3};
         int[] startArray2 = {};
-        System.out.println(start1(startArray1,startArray2));
+        System.out.println(start1(startArray1,startArray2));*/
+
+        //Task 15: plusTwo
+        System.out.println("Task 15: plusTwo ");
+        int[] plusTwoArray1 = {1,2};
+        int[] plusTwoArray2 = {3,4};
+        System.out.println(Arrays.toString(plusTwo(plusTwoArray1,plusTwoArray2)));
+
+
+
     }
 
 
@@ -216,5 +225,12 @@ public class ArrayExercises {
         }
         return count;
     }
+
+    //Task 15: plusTwo
+    public static int[] plusTwo(int[] arr1,int[] arr2){
+        int[] result= {arr1[0],arr1[1],arr2[0],arr2[1]};
+        return result;
+    }
+
 
 }
