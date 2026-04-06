@@ -18,9 +18,15 @@ public class ArrayExercises {
         System.out.println(commonEnd(arr1,arr2));*/
 
         //Task 3: reverse3
-        System.out.println("Task 3: reverse3 ");
+        /*System.out.println("Task 3: reverse3 ");
         int[] reverseArray= {1,2,6};
-        reverse3(reverseArray);
+        reverse3(reverseArray);*/
+
+        //Task 4: middleWay
+        System.out.println("Task 4: middleWay ");
+        int[] midlleWay1 = {1,2,3};
+        int[] midlleWay2 = {4,5,6};
+        System.out.println(Arrays.toString(middleWay(midlleWay1,midlleWay2)));
     }
 
     //Task 1: firstLast6
@@ -34,7 +40,7 @@ public class ArrayExercises {
     }
 
     //Task 2: commonEnd
-    public static boolean commonEnd(int num1[],int num2[]){
+    public static boolean commonEnd(int[] num1,int[] num2){
         if((num1[0]==num2[0])||(num1[num1.length-1]==num2[num2.length-1])){
             return true;
         }else {
@@ -42,9 +48,15 @@ public class ArrayExercises {
         }
     }
 
-    //Task 2: reverse3
-    public static void reverse3(int nums[]){
+    //Task 3: reverse3
+    public static void reverse3(int[] nums){
         int[] result ={nums[2],nums[1],nums[0]};
         System.out.println(Arrays.toString(result));
+    }
+
+    //Task 4: middleWay
+    public static int[] middleWay(int[] ar1,int[] ar2){
+        int [] result={ar1[1],ar2[1]};
+        return result;
     }
 }
